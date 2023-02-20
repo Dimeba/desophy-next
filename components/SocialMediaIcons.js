@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 //styles
-import styles from '../styles/footer.module.scss'
+import styles from './footer.module.scss'
 
 // SM icons
 import { GrFacebookOption } from 'react-icons/Gr'
