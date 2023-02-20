@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
 //styles
-import styles from './footer.module.scss'
+import styles from './Footer.module.scss'
 
 // SM icons
-import { GrFacebookOption } from 'react-icons/Gr'
-import { GrInstagram } from 'react-icons/Gr'
-import { GrLinkedinOption } from 'react-icons/Gr'
+import { GrFacebookOption } from 'react-icons/gr'
+import { GrInstagram } from 'react-icons/gr'
+import { GrLinkedinOption } from 'react-icons/gr'
 
 const SocialMediaIcons = () => {
 	return (
