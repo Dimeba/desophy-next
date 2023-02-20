@@ -1,0 +1,91 @@
+@use 'base';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: 0.3s;
+}
+
+html {
+	scroll-behavior: smooth !important;
+}
+
+section,
+footer {
+	--background-color: black;
+	/* background: var(--background-color); */
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 10vh 0;
+}
+
+.purpleBackground {
+	background-color: base.$purple;
+
+	* {
+		color: white;
+	}
+}
+
+.orangeBackground {
+	background-color: base.$orange;
+
+	* {
+		color: white;
+	}
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+button {
+	font-family: base.$font;
+	font-size: 0.8rem;
+	font-weight: 700;
+	border-radius: 0.3rem;
+	padding: 0.615rem 1.2rem;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: none !important;
+	text-transform: uppercase;
+}
+
+button::before {
+	box-shadow: none !important;
+}
+
+button::after {
+	box-shadow: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
