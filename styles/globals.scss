@@ -7,10 +7,15 @@
 	margin: 0;
 	padding: 0;
 	transition: 0.3s;
+	cursor: none;
 }
 
 html {
 	scroll-behavior: smooth !important;
+}
+
+body {
+	overflow: overlay;
 }
 
 section,
@@ -69,7 +74,7 @@ button {
 	font-weight: 700;
 	border-radius: 0.3rem;
 	padding: 0.615rem 1.2rem;
-	cursor: pointer;
+	// cursor: pointer;
 	text-align: center;
 	text-decoration: none;
 	box-shadow: none !important;
@@ -88,4 +93,35 @@ button::after {
 }
 
 @media screen and (max-width: 768px) {
+}
+
+// Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+	width: 5px;
+}
+
+::-webkit-scrollbar:horizontal {
+	height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: white;
 }
