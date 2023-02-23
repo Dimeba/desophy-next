@@ -1,8 +1,9 @@
 // components
 import Link from 'next/link'
 import SocialMediaIcons from './SocialMediaIcons'
+import Button from './Button'
 
-//styles
+// styles
 import styles from './Footer.module.scss'
 
 const Footer = () => {
@@ -39,7 +40,7 @@ const Footer = () => {
 							<div className={styles.inputsBox}>
 								<input type='text' placeholder='Name' />
 								<input type='email' placeholder='Email Address' />
-								<button>Send</button>
+								<Button text='Send' />
 							</div>
 						</form>
 					</div>

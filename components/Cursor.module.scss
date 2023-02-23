@@ -2,15 +2,28 @@
 
 .cursor {
 	position: fixed;
-	width: 2rem;
-	height: 2rem;
 	background-color: base.$orange;
 	// background-color: white;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
 	mix-blend-mode: difference;
-	backdrop-filter: blur(2px);
-
+	backdrop-filter: blur(5px);
 	transition: none;
 	pointer-events: none;
+}
+
+.cursorText {
+	position: fixed;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding: 1rem;
+	color: white;
+	// font-weight: 700;
+	transition: none;
+	pointer-events: none;
+	line-height: 1.2rem;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

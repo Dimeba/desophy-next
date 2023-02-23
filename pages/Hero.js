@@ -1,4 +1,6 @@
+// components
 import Link from 'next/link'
+import Button from '@/components/Button'
 
 //styles
 import styles from './Hero.module.scss'
@@ -23,7 +25,7 @@ const Hero = () => {
 					<Link href='#'>Branding & Marketing</Link>
 				</div>
 				<Link href='#footer'>
-					<button>Get Started</button>
+					<Button text='Get Started' />
 				</Link>
 			</div>
 		</section>
