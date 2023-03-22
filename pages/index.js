@@ -3,6 +3,8 @@ import Head from 'next/head'
 // components
 import Layout from '@/components/Layout'
 import Hero from './Hero'
+import ResearchSection from './ResearchSection'
+import MarketingSection from './MarketingSection'
 
 export default function Home() {
 	return (
@@ -22,6 +24,8 @@ export default function Home() {
 			</Head>
 			<Layout>
 				<Hero />
+				<ResearchSection />
+				<MarketingSection />
 			</Layout>
 		</>
 	)

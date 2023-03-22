@@ -19,21 +19,21 @@ const SocialMediaIcons = () => {
 		<div className={styles.socialMediaIcons}>
 			<Link
 				href='https://www.facebook.com/desophy/'
-				onMouseEnter={() => updateCursor('Visit Our Facebok', '8rem')}
+				onMouseEnter={() => updateCursor('Visit Our Facebok', null, '8rem')}
 				onMouseLeave={resetCursor}
 			>
 				<GrFacebookOption className={styles.icon} size='1.5rem' />
 			</Link>
 			<Link
 				href='https://www.instagram.com/desophynyc/'
-				onMouseEnter={() => updateCursor('Visit Our Instagram', '8rem')}
+				onMouseEnter={() => updateCursor('Visit Our Instagram', null, '8rem')}
 				onMouseLeave={resetCursor}
 			>
 				<GrInstagram className={styles.icon} size='1.5rem' />
 			</Link>
 			<Link
 				href='https://www.linkedin.com/company/desophy/'
-				onMouseEnter={() => updateCursor('Visit Our LinkedIn', '8rem')}
+				onMouseEnter={() => updateCursor('Visit Our LinkedIn', null, '8rem')}
 				onMouseLeave={resetCursor}
 			>
 				<GrLinkedinOption className={styles.icon} size='1.5rem' />

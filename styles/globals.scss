@@ -20,19 +20,32 @@ body {
 
 section,
 footer {
-	--background-color: black;
-	/* background: var(--background-color); */
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	padding: 10vh 0;
+}
+
+::selection {
+	background: base.$orange;
+	color: white;
 }
 
 .purpleBackground {
 	background-color: base.$purple;
 
 	* {
+		color: white;
+	}
+
+	button {
+		border: 2px solid base.$orange;
+		color: base.$orange;
+	}
+
+	button:hover {
+		background-color: base.$orange;
 		color: white;
 	}
 }
@@ -43,14 +56,29 @@ footer {
 	* {
 		color: white;
 	}
+
+	::selection {
+		background: base.$purple;
+		color: white;
+	}
+
+	button {
+		border: 2px solid white;
+	}
+
+	button:hover {
+		background-color: white;
+		color: base.$orange;
+	}
 }
 
 .container {
-	width: 80%;
+	width: 80vw;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding: 10vh 0;
 }
 
 h1 {
@@ -64,8 +92,21 @@ h2 {
 }
 
 h3 {
+	font-size: 1.875rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+h4 {
 	font-size: 1.5rem;
 	font-weight: 400;
+}
+
+h5 {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 0.8rem;
+	text-transform: uppercase;
 }
 
 button {
@@ -74,11 +115,17 @@ button {
 	font-weight: 700;
 	border-radius: 0.3rem;
 	padding: 0.615rem 1.2rem;
-	// cursor: pointer;
 	text-align: center;
 	text-decoration: none;
 	box-shadow: none !important;
 	text-transform: uppercase;
+	width: 10.4rem;
+	background-color: transparent;
+}
+
+button:hover {
+	background-color: white;
+	color: base.$orange;
 }
 
 button::before {

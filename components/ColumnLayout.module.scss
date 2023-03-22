@@ -1,0 +1,43 @@
+.column {
+	width: 50%;
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.left {
+	padding-left: 10vw;
+	padding-right: 5vw;
+}
+
+.right {
+	padding-left: 5vw;
+	padding-right: 10vw;
+}
+
+.column {
+	p {
+		margin-bottom: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.column {
+		width: 100%;
+		min-height: 50vh;
+		height: fit-content;
+	}
+
+	.left {
+		padding: 10vh 10vw;
+	}
+	.right {
+		padding: 10vh 10vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+}

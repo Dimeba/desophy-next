@@ -20,9 +20,18 @@ const Hero = () => {
 					<br /> created a foolproof roadmap for our clients to work more
 					efficiently and to close more deals.
 				</h3>
-				<div className={styles.heroLinks}>
+				{/* <div className={styles.heroLinks}>
 					<Link href='#'>Analytics & Market Research</Link> |{' '}
 					<Link href='#'>Branding & Marketing</Link>
+				</div> */}
+				<div className={styles.heroLinks}>
+					<Link href='#'>
+						<Button text='Analytics & Market Research' />
+					</Link>
+					<p>|</p>
+					<Link href='#'>
+						<Button text='Branding & Marketing' />
+					</Link>
 				</div>
 				<Link href='#footer'>
 					<Button text='Get Started' />

@@ -3,7 +3,6 @@
 .cursor {
 	position: fixed;
 	background-color: base.$orange;
-	// background-color: white;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
 	mix-blend-mode: difference;
@@ -11,6 +10,7 @@
 	transition: none;
 	pointer-events: none;
 	animation: backgroundAnimation 7s infinite;
+	z-index: 2;
 }
 
 @keyframes backgroundAnimation {
@@ -31,7 +31,6 @@
 	text-align: center;
 	padding: 1rem;
 	color: white;
-	// font-weight: 700;
 	transition: none;
 	pointer-events: none;
 	line-height: 1.2rem;
@@ -39,4 +38,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+@media screen and (max-width: 1024px) {
+	.cursor,
+	.cursorText {
+		display: none;
+	}
 }

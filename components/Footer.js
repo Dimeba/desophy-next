@@ -15,24 +15,24 @@ const Footer = () => {
 			<div className={`container ${styles.footerContainer}`}>
 				<div>
 					<h2>Do you find yourself being busy instead of productive?</h2>
-					<h3>Focus on calls and closing deals, and delegate the rest.</h3>
+					<h4>Focus on calls and closing deals, and delegate the rest.</h4>
 				</div>
 				<div className={styles.footerMiddle}>
 					<div className={styles.siteMap}>
 						<div>
-							<h4>Who We Are</h4>
+							<h5>Who We Are</h5>
 							<Link href='#'>Why Us</Link>
 							<Link href='#'>How It Works</Link>
 						</div>
 						<div>
-							<h4>Our Services</h4>
+							<h5>Our Services</h5>
 							<Link href='#'>Analytics & Market Research</Link>
 							<Link href='#'>Branding & Marketings</Link>
 						</div>
 					</div>
 
 					<div className={styles.contactForm}>
-						<h4>Get Started</h4>
+						<h5>Get Started</h5>
 						<form>
 							<div className={styles.textAreaBox}>
 								<textarea placeholder='Ask us anything or leave best number to reach you at'></textarea>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 // styles
 import styles from './Cursor.module.scss'
@@ -8,7 +9,7 @@ import { useCursorContext } from '../hooks/useCursorContext'
 
 const Cursor = () => {
 	const [mousePosition, setMousePosition] = useState({})
-	const { cursorText, cursorSize } = useCursorContext()
+	const { cursorText, cursorImage, cursorSize } = useCursorContext()
 
 	const setCursorPosition = e => {
 		setMousePosition({
@@ -41,7 +42,10 @@ const Cursor = () => {
 					height: cursorSize
 				}}
 			>
-				{cursorText}
+				{cursorText && cursorText}
+				{cursorImage && (
+					<Image src={cursorImage} width='40' height='40' alt='Arrow Image' />
+				)}
 			</div>
 		</>
 	)

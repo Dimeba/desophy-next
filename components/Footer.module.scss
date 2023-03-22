@@ -9,12 +9,8 @@
 		font-size: 2.4rem;
 	}
 
-	h3 {
-		text-align: center;
-	}
-
 	h4 {
-		text-transform: uppercase;
+		text-align: center;
 	}
 }
 
@@ -45,10 +41,6 @@
 .contactForm {
 	flex-grow: 1;
 
-	h4 {
-		margin-bottom: 0.8rem;
-	}
-
 	form {
 		display: flex;
 		gap: 1.25rem;
@@ -56,6 +48,8 @@
 		button {
 			background-color: base.$orange;
 			border: 0;
+			width: auto;
+			color: white;
 		}
 
 		button:hover {
@@ -73,6 +67,7 @@
 			color: white;
 			font-family: base.$font;
 			font-size: 0.8rem;
+			// cursor: text;
 		}
 
 		input::placeholder,
@@ -87,6 +82,11 @@
 		input:focus,
 		textarea:focus {
 			outline: none;
+		}
+
+		input:hover,
+		textarea:hover {
+			background-color: rgba($color: white, $alpha: 0.2);
 		}
 	}
 }
@@ -154,7 +154,7 @@
 	.footerContainer {
 		gap: 10vh;
 		h2,
-		h3 {
+		h4 {
 			text-align: left;
 		}
 
